@@ -1,0 +1,39 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Amos Luo
+ */
+
+@startuml
+'https://plantuml.com/class-diagram
+
+class app {
+    main()
+    start()
+}
+
+class buttonFunctions {
+    newList
+    LoadList
+    DeleteList
+    AddList
+    ShowCompleted
+}
+
+class MakingList {
+    ListName
+    NewTask
+    Date
+}
+
+class ToDoList {
+    removeList
+    LoadList
+    Save
+}
+
+
+app -- buttonFunctions
+buttonFunctions -- MakingList
+buttonFunctions -- ToDoList
+
+@enduml

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="483.0" prefWidth="743.0" VBox.vgrow="ALWAYS">
+            <children>
+                <ScrollPane layoutX="23.0" layoutY="114.0" prefHeight="218.0" prefWidth="142.0" />
+                <Label layoutX="23.0" layoutY="87.0" prefHeight="27.0" prefWidth="77.0" text="ToDo List">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <AnchorPane layoutX="23.0" layoutY="47.0" minHeight="0.0" minWidth="0.0" prefHeight="27.0" prefWidth="119.0">
+                    <children>
+                        <Button layoutY="1.0" mnemonicParsing="false" text="+" />
+                        <Label layoutX="31.0" prefHeight="27.0" prefWidth="77.0" text="New List">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <TextField layoutX="175.0" layoutY="339.0" promptText="New task" />
+                <Button layoutX="23.0" layoutY="339.0" mnemonicParsing="false" text="Load List" />
+                <TableView layoutX="175.0" layoutY="74.0" prefHeight="258.0" prefWidth="451.0">
+                    <columns>
+                        <TableColumn prefWidth="267.0" text="Tasks" />
+                        <TableColumn prefWidth="93.0" text="Date" />
+                        <TableColumn prefWidth="90.0" text="Completed?" />
+                    </columns>
+                </TableView>
+                <Button layoutX="94.0" layoutY="339.0" mnemonicParsing="false" text="Delete List" />
+                <DatePicker layoutX="330.0" layoutY="339.0" prefHeight="25.0" prefWidth="87.0" promptText="Data" />
+                <Button layoutX="426.0" layoutY="339.0" mnemonicParsing="false" text="Save" />
+                <MenuBar layoutY="2.0" prefHeight="15.0" prefWidth="640.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Open" />
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                                <MenuItem mnemonicParsing="false" text="Save" />
+                                <MenuItem mnemonicParsing="false" text="Save as" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Delete" />
+                                <MenuItem mnemonicParsing="false" text="Sort by..." />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Getting Started" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <Label layoutX="7.0" layoutY="378.0" text="Click on task to edit. Double click to mark as complete.">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font>
+                </Label>
+                <Button layoutX="474.0" layoutY="339.0" mnemonicParsing="false" text="Delete" />
+                <MenuButton layoutX="532.0" layoutY="339.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Sort By">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Task" />
+                        <MenuItem mnemonicParsing="false" text="Date" />
+                        <MenuItem mnemonicParsing="false" text="Completed" />
+                    </items>
+                </MenuButton>
+                <CheckBox layoutX="330.0" layoutY="370.0" mnemonicParsing="false" text="Show completed?" />
+                <TextField layoutX="175.0" layoutY="47.0" prefHeight="25.0" prefWidth="161.0" promptText="List Name" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
